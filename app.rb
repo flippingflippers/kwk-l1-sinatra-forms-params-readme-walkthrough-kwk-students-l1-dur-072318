@@ -7,5 +7,9 @@ class App < Sinatra::Base
   end
 
   # Add your post route and action below
-
+post '/bag_of_candy' do
+  @candy=params[:candy]
+  @number=params[:number]
+  erb :food
+end
 end
